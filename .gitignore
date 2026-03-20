@@ -1,0 +1,92 @@
+# Dependencies
+node_modules
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+.next
+dist
+.turbo
+
+# Test coverage
+coverage
+
+# TypeScript cache
+*.tsbuildinfo
+
+
+.sisyphus/
+
+# GitHub Copilot
+.github/copilot/
+
+.chatgpt/
+
+# Continue.dev
+.continue/
+
+# Codeium
+.codeium/
+
+# Tabnine
+.tabnine/
+
+# CodeRabbit
+.coderabbit/
+
+# Aider
+.aider/
+
+# Roo Code
+.roo/
+
+.windsurf/
+
+
+
+# LM Studio
+.lmstudio/
+
+# Jan
+.jan/
+
+# Ollama
+.ollama/
+
+# Bolt / StackBlitz AI
+.bolt/
+
+# Codewhisperer
+.codewhisperer/
+
+# Sourcegraph Cody
+.cody/
+
+# Mutable.ai
+.mutableai/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+bun-debug.log*
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Docker
+*.pid
