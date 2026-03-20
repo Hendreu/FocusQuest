@@ -162,7 +162,7 @@ export default function OnboardingPage() {
         alignItems: "center",
         justifyContent: "center",
         minHeight: "100vh",
-        backgroundColor: "var(--color-bg, #f3f4f6)",
+        backgroundColor: "#0f172a",
         padding: "24px",
       }}
     >
@@ -170,7 +170,8 @@ export default function OnboardingPage() {
         style={{
           width: "100%",
           maxWidth: "560px",
-          backgroundColor: "var(--color-bg-card, #ffffff)",
+          backgroundColor: "#1e293b",
+          color: "#f8fafc",
           borderRadius: "16px",
           boxShadow:
             "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
