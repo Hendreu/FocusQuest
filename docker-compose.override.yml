@@ -1,0 +1,12 @@
+services:
+  postgres:
+    environment:
+      NODE_ENV: development
+
+  redis:
+    environment:
+      NODE_ENV: development
+
+  minio:
+    environment:
+      NODE_ENV: development
