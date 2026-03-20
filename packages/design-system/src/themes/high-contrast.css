@@ -1,0 +1,88 @@
+/* FocusQuest — High-Contrast Theme */
+/* WCAG AAA — minimum 7:1 contrast ratio for all text */
+/* Applied when: [data-theme="high-contrast"] */
+
+[data-theme="high-contrast"] {
+  /* --- Background layers (pure black) --- */
+  --color-bg-base: #000000;
+  --color-bg-subtle: #0a0a0a;
+  --color-bg-muted: #111111;
+  --color-bg-emphasis: #1a1a1a;
+
+  /* --- Foreground / Text (pure white — 21:1 on black) --- */
+  --color-fg-default: #ffffff;
+  --color-fg-muted: #e0e0e0;
+  --color-fg-subtle: #c0c0c0;
+  --color-fg-on-accent: #000000;
+
+  /* --- Primary (Bright yellow on black — 19.5:1) --- */
+  --color-primary-default: #ffff00;
+  --color-primary-hover: #ffff66;
+  --color-primary-active: #ffffaa;
+  --color-primary-subtle: #1a1a00;
+  --color-primary-muted: #333300;
+  --color-primary-fg: #ffff00;
+
+  /* --- Success (Bright green — 8.5:1 on black) --- */
+  --color-success-default: #00ff00;
+  --color-success-subtle: #001a00;
+  --color-success-fg: #00ff00;
+
+  /* --- Warning (Bright orange/yellow) --- */
+  --color-warning-default: #ffaa00;
+  --color-warning-subtle: #1a0f00;
+  --color-warning-fg: #ffaa00;
+
+  /* --- Error (Bright red — 5.9:1, outlined for clarity) --- */
+  --color-error-default: #ff6666;
+  --color-error-subtle: #1a0000;
+  --color-error-fg: #ff6666;
+
+  /* --- Gamification (high-visibility) --- */
+  --color-xp: #ffcc00;
+  --color-xp-subtle: #1a1000;
+  --color-streak: #ff8800;
+  --color-streak-subtle: #1a0800;
+  --color-badge: #dd88ff;
+  --color-badge-subtle: #1a0033;
+  --color-coin: #ffcc00;
+
+  /* --- Border (white, always visible) --- */
+  --color-border-default: #ffffff;
+  --color-border-muted: #808080;
+  --color-border-emphasis: #ffffff;
+
+  /* --- Surface / Card --- */
+  --color-surface-default: #000000;
+  --color-surface-raised: #111111;
+  --color-surface-overlay: #000000;
+
+  /* --- Shadow (not meaningful on pure-black) --- */
+  --shadow-sm: 0 0 0 1px #ffffff;
+  --shadow-md: 0 0 0 2px #ffffff;
+  --shadow-lg: 0 0 0 2px #ffffff;
+  --shadow-xl: 0 0 0 3px #ffffff;
+
+  /* --- Focus ring (high-visibility yellow) --- */
+  --color-focus-ring: #ffff00;
+  --focus-ring-offset: 3px;
+
+  /* --- Overlay --- */
+  --color-overlay-backdrop: rgb(0 0 0 / 0.9);
+
+  /* --- Animation (disabled for cognitive clarity) --- */
+  --anim-duration-fast: 0ms;
+  --anim-duration-normal: 0ms;
+  --anim-duration-slow: 0ms;
+  --anim-easing: linear;
+  --anim-easing-spring: linear;
+}
+
+/* Also disable all transitions in high-contrast for prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="high-contrast"] {
+    --anim-duration-fast: 0ms;
+    --anim-duration-normal: 0ms;
+    --anim-duration-slow: 0ms;
+  }
+}

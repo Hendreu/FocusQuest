@@ -1,0 +1,140 @@
+/* FocusQuest — Dark Theme */
+/* Applied when: [data-theme="dark"] or (no data-theme + prefers-color-scheme: dark) */
+
+[data-theme="dark"] {
+  /* --- Background layers --- */
+  --color-bg-base: #0f0f0f;
+  --color-bg-subtle: #161616;
+  --color-bg-muted: #1e1e1e;
+  --color-bg-emphasis: #2a2a2a;
+
+  /* --- Foreground / Text --- */
+  --color-fg-default: #f1f5f9;
+  --color-fg-muted: #94a3b8;
+  --color-fg-subtle: #475569;
+  --color-fg-on-accent: #ffffff;
+
+  /* --- Primary (Indigo — brightened for dark bg) --- */
+  --color-primary-default: #818cf8;
+  --color-primary-hover: #a5b4fc;
+  --color-primary-active: #c7d2fe;
+  --color-primary-subtle: #1e1b4b;
+  --color-primary-muted: #312e81;
+  --color-primary-fg: #e0e7ff;
+
+  /* --- Success --- */
+  --color-success-default: #4ade80;
+  --color-success-subtle: #052e16;
+  --color-success-fg: #86efac;
+
+  /* --- Warning --- */
+  --color-warning-default: #fbbf24;
+  --color-warning-subtle: #1c1200;
+  --color-warning-fg: #fde68a;
+
+  /* --- Error --- */
+  --color-error-default: #f87171;
+  --color-error-subtle: #2d0000;
+  --color-error-fg: #fca5a5;
+
+  /* --- Gamification --- */
+  --color-xp: #fbbf24;
+  --color-xp-subtle: #1c1200;
+  --color-streak: #fb923c;
+  --color-streak-subtle: #1c0a00;
+  --color-badge: #c084fc;
+  --color-badge-subtle: #1a0036;
+  --color-coin: #facc15;
+
+  /* --- Border --- */
+  --color-border-default: #2a2a2a;
+  --color-border-muted: #1e1e1e;
+  --color-border-emphasis: #3f3f46;
+
+  /* --- Surface / Card --- */
+  --color-surface-default: #161616;
+  --color-surface-raised: #1e1e1e;
+  --color-surface-overlay: #1e1e1e;
+
+  /* --- Shadow (stronger for dark) --- */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.6), 0 8px 10px -6px rgb(0 0 0 / 0.5);
+
+  /* --- Focus ring --- */
+  --color-focus-ring: #818cf8;
+  --focus-ring-offset: 2px;
+
+  /* --- Overlay --- */
+  --color-overlay-backdrop: rgb(0 0 0 / 0.7);
+
+  /* --- Animation --- */
+  --anim-duration-fast: 150ms;
+  --anim-duration-normal: 250ms;
+  --anim-duration-slow: 400ms;
+  --anim-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --anim-easing-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    /* Same as [data-theme="dark"] */
+    --color-bg-base: #0f0f0f;
+    --color-bg-subtle: #161616;
+    --color-bg-muted: #1e1e1e;
+    --color-bg-emphasis: #2a2a2a;
+    --color-fg-default: #f1f5f9;
+    --color-fg-muted: #94a3b8;
+    --color-fg-subtle: #475569;
+    --color-fg-on-accent: #ffffff;
+    --color-primary-default: #818cf8;
+    --color-primary-hover: #a5b4fc;
+    --color-primary-active: #c7d2fe;
+    --color-primary-subtle: #1e1b4b;
+    --color-primary-muted: #312e81;
+    --color-primary-fg: #e0e7ff;
+    --color-success-default: #4ade80;
+    --color-success-subtle: #052e16;
+    --color-success-fg: #86efac;
+    --color-warning-default: #fbbf24;
+    --color-warning-subtle: #1c1200;
+    --color-warning-fg: #fde68a;
+    --color-error-default: #f87171;
+    --color-error-subtle: #2d0000;
+    --color-error-fg: #fca5a5;
+    --color-xp: #fbbf24;
+    --color-xp-subtle: #1c1200;
+    --color-streak: #fb923c;
+    --color-streak-subtle: #1c0a00;
+    --color-badge: #c084fc;
+    --color-badge-subtle: #1a0036;
+    --color-coin: #facc15;
+    --color-border-default: #2a2a2a;
+    --color-border-muted: #1e1e1e;
+    --color-border-emphasis: #3f3f46;
+    --color-surface-default: #161616;
+    --color-surface-raised: #1e1e1e;
+    --color-surface-overlay: #1e1e1e;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.6), 0 8px 10px -6px rgb(0 0 0 / 0.5);
+    --color-focus-ring: #818cf8;
+    --focus-ring-offset: 2px;
+    --color-overlay-backdrop: rgb(0 0 0 / 0.7);
+    --anim-duration-fast: 150ms;
+    --anim-duration-normal: 250ms;
+    --anim-duration-slow: 400ms;
+    --anim-easing: cubic-bezier(0.4, 0, 0.2, 1);
+    --anim-easing-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="dark"] {
+    --anim-duration-fast: 0ms;
+    --anim-duration-normal: 0ms;
+    --anim-duration-slow: 0ms;
+  }
+}
